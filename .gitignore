@@ -1,0 +1,4 @@
+*.pdf
+/Test*
+/test*
+*.class
