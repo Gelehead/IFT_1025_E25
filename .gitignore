@@ -1,4 +1,15 @@
-*.pdf
 /Test*
 /test*
 *.class
+*/out/
+legal/
+*.idea/
+script-files/
+*.iml
+build/
+*.html
+*.js
+*.svg
+*.woff
+*.woff2
+*.css
