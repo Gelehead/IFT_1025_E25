@@ -1,48 +1,26 @@
-public class Main {
-    public static void main(String[] args) {
-        // Tests publics
-        int passed_tests = 0;
-        
-        // vecteurs
-        if ( Test.vec_dot() ) {
-            passed_tests += 1;
+/**Parsa Makari
+ * Matricule 20121030
+ *  01/06/25
+ */
+public class Main{
+    // La fonction ci-dessus appel toutes les methodes definies, dans notre class test.
+    public static void main(String[] args){
+        Vecteur v = new Vecteur(new double[]{3.0,2.0,4.0});
+        v.setElement(2, 3.0);
+        System.out.println(v);
+        System.out.println("vec_rep: " + Test.vec_rep());
+        System.out.println("vec_dot: " + Test.vec_dot());
+        System.out.println("vec_set: " + Test.vec_set());
+        System.out.println("vec_get: " + Test.vec_get());
+        System.out.println("vec_getelement_oob: " + Test.vec_getelement_oob());
+
+        System.out.println("mat_dot_bad_dim: " + Test.mat_dot_bad_dim());
+        System.out.println("mat_setget: " + Test.mat_setget());
+        System.out.println("mat_addscalaire: " + Test.mat_addscalaire());
+        System.out.println("mat_multscalaire: " + Test.mat_multscalaire());
+        System.out.println("mat_transpose: " + Test.mat_transpose());
+        System.out.println("mat_identite: " + Test.mat_identite());
+        System.out.println("mat_getcell_oob: " + Test.mat_getcell_oob());
+            }
         }
-        if ( Test.vec_get() ) {
-            passed_tests += 1;
-        }
-        if ( Test.vec_rep() ) {
-            passed_tests += 1;
-        }
-        if ( Test.vec_set() ) {
-            passed_tests += 1;
-        }
-        if ( Test.vec_getelement_oob() ) {
-            passed_tests += 1;
-        }
-        
-        // Matrice
-        if (Test.mat_dot_bad_dim()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_setget()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_addscalaire()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_multscalaire()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_transpose()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_identite()) {
-            passed_tests += 1;
-        }
-        if (Test.mat_getcell_oob()) {
-            passed_tests += 1;
-        }
-        
-        System.out.println(passed_tests);
-    }
-}
+
